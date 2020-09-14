@@ -1,0 +1,41 @@
+body {
+  background-color: red;
+}
+
+.small {
+  display: block;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 300px) {
+  body {
+    background-color: green;
+  }
+  .small {
+    width: 66%;
+  }
+  .medium {
+    width: 33%;
+    font-size: 14px;
+  }
+  .large {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .large {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
